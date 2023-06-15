@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Bookmark Manager</title>
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <p class="main-heading">Bookmark Manager</p>
+            <p class="main-subheading">Your custom bookmark manager</p>
+        </div>
+        <div class="add-bookmark">
+            <form class="add">
+                <input type="text" class="bookmark-link" placeholder="link">
+                <input type="text" class="bookmark-title" placeholder="title">
+                <select name="category" id="category" class="bookmark-category">
+                    <option value="youtube">Youtube</option>
+                    <option value="netflix">Netflix</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="button" value="Bookmark" class="add-bookmark">
+            </form>
+        </div>
+        <div class="tags">
+            <span class="all active">All</span>
+            <span class="youtube">Youtube</span>
+            <span class="netflix">Netflix</span>
+            <span class="twitter">Twitter</span>
+            <span class="other">Other</span>
+        </div>
+        <div class="bookmark-cards">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag active" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag active" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag active" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag active" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag active" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag active" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag active" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag active" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag active" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag active" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag active" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag active" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag active" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag active" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag active" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag active" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag active" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Test Title</p>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag" style="background-color: rgb(153, 0, 0);color:white;">Youtube</span>
+                        <span class="card-tag" style="background-color: rgb(165, 11, 11);color:white;">Netflix</span>
+                        <span class="card-tag active" style="background-color: rgb(3, 129, 247);color:white;">Twitter</span>
+                        <span class="card-tag" style="background-color: rgb(255, 174, 0);color:white;">Other</span>
+                    </div>
+                    <div class="functions">
+                        <i class="bi bi-box-arrow-up-right" style="color:#000000"></i>
+                        <i class="bi bi-google" style="color:#1b6ae9"></i>
+                        <i class="bi bi-trash" style="color:#f33838"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
