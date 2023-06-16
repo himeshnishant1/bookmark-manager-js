@@ -10,6 +10,11 @@
     font-size: 16px;
     text-decoration: none;
     list-style: none;
+    transition: all 0.5s;
+}
+
+i{
+    transition: all 0s;
 }
 
 body{
@@ -75,7 +80,7 @@ form.add .bookmark-category{
     width: 10%; 
 }
 
-form.add .add-bookmark{
+form.add .submit-bookmark{
     width: 15%; 
     background-color: rgb(57, 57, 212);
     color: white;
@@ -83,7 +88,7 @@ form.add .add-bookmark{
     box-shadow: rgb(71, 71, 71) 1px 1px 4px;
 }
 
-form.add .add-bookmark:hover{
+form.add .submit-bookmark:hover{
     cursor: pointer;
     background-color: rgb(23, 23, 192);
     box-shadow: none;
@@ -128,13 +133,14 @@ main .bookmark-cards{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 20%;
+    justify-content: space-between;
+    width: 30%;
     box-shadow: rgb(71, 71, 71) 1px 1px 4px;
     border-radius: 5px;
     background-color: white;
     margin: 20px 10px;
     padding: 5px 0px;
+    height: 130px;
 }
 
 .card .card-header{
@@ -193,9 +199,6 @@ main .bookmark-cards{
         padding: 1px 0px;
     }
 
-    .card{
-        width: 23%;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -218,6 +221,10 @@ main .bookmark-cards{
     .card{
         width: 30%;
     }
+
+    .card-header .card-title{
+        font-size: 16px;
+    } 
 }
 
 @media only screen and (max-width: 860px) {
@@ -245,7 +252,7 @@ main .bookmark-cards{
         width: 15%; 
     }
     
-    form.add .add-bookmark{
+    form.add .submit-bookmark{
         width: 15%;
         font-size: 16px;
     }
@@ -292,7 +299,7 @@ main .bookmark-cards{
         width: 80%; 
     }
     
-    form.add .add-bookmark{
+    form.add .submit-bookmark{
         width: 80%;
         font-size: 16px;
     }
