@@ -57,7 +57,7 @@ function fetchData(){
                                 <div class="functions">
                                     <i class="bi bi-box-arrow-up-right" style="color:#000000" onclick="window.open('${document.data().link}')"></i>
                                     <i class="bi bi-google" style="color:#1b6ae9" onclick="window.open('https://www.google.com/search?q=${document.data().title}')"></i>
-                                    <i class="bi bi-trash" style="color:#f33838" data-id="${document.id}></i>
+                                    <i class="bi bi-trash" style="color:#f33838" data-id="${document.id}"></i>
                                 </div>
                             </div>
                         </div>`;
