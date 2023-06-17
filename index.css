@@ -18,7 +18,8 @@ i{
 }
 
 body{
-    background-color: rgb(238, 237, 237);
+    /*background-color: rgb(238, 237, 237);*/
+    background-color: rgb(26, 26, 26);
 }
 
 main{
@@ -26,9 +27,33 @@ main{
     text-align: center;
 }
 
+main span.ui-theme{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 1%;
+}
+
+span.ui-theme i{
+    font-size: 50px;
+    margin: 10px;
+    display: none;
+    transition: all 0.1s;
+}
+
+span.ui-theme i:hover{
+    cursor: pointer;
+    font-size: 55px;
+}
+
+span.ui-theme i.active{
+    display: block;
+}
+
 main .heading{
     margin: 10px auto;
     width: fit-content;
+    color: white;
 }
 
 .heading .main-heading{
@@ -49,9 +74,9 @@ main .add-bookmark{
     margin: 20px auto;
     width: 70%;
     padding: 10px;
-    box-shadow: rgb(71, 71, 71) 1px 1px 4px;
+    /*box-shadow: rgb(71, 71, 71) 1px 1px 4px;*/
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(68, 68, 68);
 }
 
 .add-bookmark form{
@@ -66,6 +91,8 @@ form.add input,select{
     padding: 10px;
     font-size: 20px;
     border: 1px solid black;
+    background-color: rgb(68, 68, 68);
+    color: white;
 }
 
 form.add .bookmark-link{
@@ -85,7 +112,8 @@ form.add .submit-bookmark{
     background-color: rgb(57, 57, 212);
     color: white;
     font-size: 20px;
-    box-shadow: rgb(71, 71, 71) 1px 1px 4px;
+    /*box-shadow: rgb(71, 71, 71) 1px 1px 4px;*/
+    border: none;
 }
 
 form.add .submit-bookmark:hover{
@@ -109,10 +137,11 @@ main .tags{
 .tags span{
     font-size: 25px;
     border-radius: 5px;
-    box-shadow: rgb(71, 71, 71) 1px 2px 3px;
+    /*box-shadow: rgb(71, 71, 71) 1px 2px 3px;*/
     padding: 5px 10px;
     margin: 0px 2px;
-    background-color: white;
+    background-color: rgb(68, 68, 68);
+    color: white;
 }
 
 .tags span:hover{
@@ -135,9 +164,10 @@ main .bookmark-cards{
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
-    box-shadow: rgb(71, 71, 71) 1px 1px 4px;
+    /*box-shadow: rgb(71, 71, 71) 1px 1px 4px;*/
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(68, 68, 68);
+    color: white;
     margin: 20px 10px;
     padding: 5px 0px;
     height: 130px;
@@ -328,10 +358,8 @@ main .bookmark-cards{
     .tags span{
         font-size: 25px;
         border-radius: 5px;
-        box-shadow: rgb(71, 71, 71) 1px 2px 3px;
         padding: 5px 10px;
         margin: 5px;
-        background-color: white;
     }
 
     main .bookmark-cards{
